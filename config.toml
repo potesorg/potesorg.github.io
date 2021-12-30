@@ -1,5 +1,5 @@
-seURL = "https://example.com"
-title = "Notepadium"
+baseURL = "https://potesorg.github.io"
+title = "Potes"
 theme = "hugo-notepadium"
 copyright = "©2019 Notepadium."
 
