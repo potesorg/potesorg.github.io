@@ -1,7 +1,7 @@
 baseURL = "https://potesorg.github.io"
 title = "Potes"
 theme = "hugo-notepadium"
-copyright = "©2019 Notepadium."
+copyright = "2022 Potest©."
 
 languageCode = "zh-cn"
 hasCJKLanguage = true
@@ -24,8 +24,8 @@ unsafe = true  # enable raw HTML in Markdown
 [params]
 style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
 dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
-logo = ""  # if you have a logo png
-slogan = "100% JavaScript-free"
+logo = "img/logo.jpg"  # if you have a logo png
+slogan = "We know you do"
 license = ""  # CC License
 fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, default is false.
 ipv6ready = true # Show IPV6Ready logo on footer.
@@ -54,18 +54,7 @@ inlineToolId = ""
 showCategories = true       # /categories/
 showTags = true             # /tags/
 
-# custom navigation items
 
 [[params.nav.custom]]
 title = "About"
 url = "/about"
-
-[[params.nav.custom]]
-title = "Hugo"
-url = "https://gohugo.io/"
-
-# for chinese
-[params.beian]
-  icp = ""     # example: 粤ICP备20056596号-1
-  gongan = ""  # example: 粤公网安备 44030502005645号
-  code = ""    # example: 44030502005645
