@@ -247,7 +247,7 @@ b {
 #content {
   display: block;
   margin: 0 auto;
-  max-width: 744px;
+  max-width: 80%;
 }
 
 #footer {
@@ -262,12 +262,16 @@ b {
 
 .header.wrap,
 .nav.wrap {
-  margin-top: -5px;
+  margin-top: -15px;
 }
 
 .header.wrap>*,
 .nav.wrap>* {
   margin-top: 5px;
+}
+
+nav.nav{
+  margin-top:55px !important;
 }
 
 .header.left-side,
@@ -290,10 +294,10 @@ b {
 }
 
 .site.logo {
-  height: 42px;
+  height: 122px;
   border-radius: 3px;
   vertical-align: middle;
-  margin-right: 8px;
+  margin-top:-10px;
 }
 
 .site.name {
@@ -771,4 +775,8 @@ b {
 
 .article.markdown-body .lntable tr>:first-child {
   border-right: 1px dashed #e6e6e6;
+}
+
+div.utterances{
+  max-width: 90%;
 }
