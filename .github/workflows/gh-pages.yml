@@ -19,6 +19,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
+          env: HUGO_SENDINBLUE_ENV:{{secrets.HUGO_SENDINBLUE_ENV}}
           # extended: true
 
       - name: Build
