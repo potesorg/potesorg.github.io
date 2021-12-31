@@ -24,7 +24,7 @@ unsafe = true  # enable raw HTML in Markdown
 [params]
 style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
 dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
-logo = "img/logo.jpg"  # if you have a logo png
+logo = "img/logo.png"  # if you have a logo png
 slogan = "We know you do"
 license = ""  # CC License
 fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, default is false.
@@ -58,3 +58,6 @@ showTags = true             # /tags/
 [[params.nav.custom]]
 title = "About"
 url = "/about"
+
+[params.account]
+merchant='0xc70ee8732a2875d262e44832d80334fb009d616F'
