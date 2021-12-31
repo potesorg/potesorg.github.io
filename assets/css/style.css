@@ -274,6 +274,10 @@ nav.nav{
   margin-top:55px !important;
 }
 
+div.donate{
+  margin-top: 10px;
+}
+
 .header.left-side,
 .header.right-side {
   display: inline-block;

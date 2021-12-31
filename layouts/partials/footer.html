@@ -4,6 +4,11 @@
         {{- $copyright = site.Title | safeHTML -}}
     {{- end -}}
     {{- partial "copyright.html" ($copyright | safeHTML) -}}
+    <div class="footer-wrap donate">
+        <p><button class="" id="donate">Support
+            <img src="https://img.icons8.com/ios-glyphs/16/ethereum.png" />   
+        </button></p>
+    </div>
 </section>
 {{- partial "math.html" . -}}
 {{- partial "syntax.html" . -}}
