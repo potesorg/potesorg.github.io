@@ -11,7 +11,8 @@
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 12px; /* width of the entire scrollbar */
+  width: 12px;
+  /* width of the entire scrollbar */
   height: 12px
 }
 
@@ -20,14 +21,18 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: transparent /* color of the tracking area */
+  background: transparent
+    /* color of the tracking area */
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.175);   /* color of the scroll thumb */
+  background-color: rgba(0, 0, 0, 0.175);
+  /* color of the scroll thumb */
   background-clip: padding-box;
-  border-radius: 6px;       /* roundness of the scroll thumb */
-  border: 2px solid transparent  /* creates padding around scroll thumb */
+  border-radius: 6px;
+  /* roundness of the scroll thumb */
+  border: 2px solid transparent
+    /* creates padding around scroll thumb */
 }
 
 *::-webkit-scrollbar-thumb:hover {
@@ -136,7 +141,7 @@ pre {
   line-height: 1.5em;
   margin: 0;
   padding: 16px;
-  
+
   border-radius: 3px;
   background-color: #f6f8fa;
 
@@ -240,7 +245,7 @@ b {
   padding-bottom: 20px;
   min-height: 64px;
   margin-bottom: 30px;
-  
+
   background-color: #fff;
 }
 
@@ -270,11 +275,11 @@ b {
   margin-top: 5px;
 }
 
-nav.nav{
-  margin-top:55px !important;
+nav.nav {
+  margin-top: 55px !important;
 }
 
-div.donate{
+div.donate {
   margin-top: 10px;
 }
 
@@ -301,7 +306,7 @@ div.donate{
   height: 122px;
   border-radius: 3px;
   vertical-align: middle;
-  margin-top:-10px;
+  margin-top: -10px;
 }
 
 .site.name {
@@ -356,13 +361,13 @@ div.donate{
   background-color: #fff;
   border-radius: 6px;
   box-shadow: inset -1px 0 0 0 rgba(224, 227, 231, .6),
-              inset 0 -1px 0 0 #e0e4e7, inset 1px 0 0 0 rgba(224, 227, 231, .6);
+    inset 0 -1px 0 0 #e0e4e7, inset 1px 0 0 0 rgba(224, 227, 231, .6);
 }
 
 .note.list .item:hover {
   box-shadow: 0 2px 6px 0 #e0e4e7,
-              inset -1px 0 0 0 rgba(224, 227, 231, .3), inset 0 -1px 0 0 #e0e4e7,
-              inset 1px 0 0 0 rgba(224, 227, 231, .2);
+    inset -1px 0 0 0 rgba(224, 227, 231, .3), inset 0 -1px 0 0 #e0e4e7,
+    inset 1px 0 0 0 rgba(224, 227, 231, .2);
 }
 
 .nav.item:hover {
@@ -534,7 +539,7 @@ div.donate{
 .slogan,
 .date,
 .license {
-  color: rgba(23,81,153,.72);
+  color: rgba(23, 81, 153, .72);
 }
 
 .pagination {
@@ -587,7 +592,7 @@ div.donate{
   margin-top: 20px;
   margin-bottom: 20px;
 
-  background-image: linear-gradient(90deg, rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg, rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%);
+  background-image: none !important;
   background-size: 20px 20px;
   background-position: center center;
 }
@@ -716,6 +721,7 @@ div.donate{
 }
 
 @media (max-width: 1012px) {
+
   .note.list .item,
   .article-container {
     padding: 24px;
@@ -781,6 +787,35 @@ div.donate{
   border-right: 1px dashed #e6e6e6;
 }
 
-div.utterances{
+div.utterances {
   max-width: 90%;
+}
+
+section#subscribe {
+  height: 150px;
+  margin-top: 20px;
+  background-color: #21262d;
+}
+
+section#subscribe>* {
+  padding-top: 20px;
+  margin-left: 33%;
+}
+
+input[type="submit"] {
+  display:block;
+  width:40%;
+  padding:20px;
+  border:none;
+  outline:none;
+  background:#2ECC71;
+  font-size:18px;
+  color:#fff;
+  transition:all .3s ease;
+  box-shadow:4px 6px 10px -4px rgba(0,0,0,0.3), 0 1px 1px -1px rgba(255,255,255,0.3);
+  cursor:pointer;
+  transition:all .6s ease;
+}
+input[type="submit"]:hover{  
+  background-color:#17AA56;
 }
