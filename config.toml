@@ -8,12 +8,6 @@ hasCJKLanguage = true
 
 enableRobotsTXT = true
 
-# Enable Disqus
-#disqusShortname = "XXX"
-
-# Google Analytics
-#googleAnalytics = "UA-123-45"
-
 [markup.highlight]
 codeFences = true
 noClasses = false
@@ -23,7 +17,7 @@ unsafe = true  # enable raw HTML in Markdown
 
 [params]
 style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
-dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
+dateFormat = "Monday, 2 January, 2006"  # if unset, default is "2006-01-02"
 logo = "img/logo.png"  # if you have a logo png
 slogan = "We know you do"
 license = ""  # CC License
