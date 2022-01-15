@@ -15,7 +15,6 @@
 {{- $coreJS = $coreJS | resources.Minify | resources.Fingerprint "sha384" -}}
 <script src="{{- $coreJS.RelPermalink -}}" integrity="{{- $coreJS.Data.Integrity -}}"></script>
 {{- end -}}
-{{ $apikey := getenv "HUGO_SENDINBLUE_KEY" }}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0-rc.0/web3.min.js" integrity="sha512-/PTXSvaFzmO4So7Ghyq+DEZOz0sNLU4v1DP4gMOfY3kFu9L/IKoqSHZ6lNl3ZoZ7wT20io3vu/U4IchGcGIhfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -163,49 +162,6 @@
       }
     });
 
-  </script>
-
-  <script>
-    // subscription handler
-    $("form#subscribe").on('submit', function(e){
-      e.preventDefault();
-      let name = $("form#subscribe>input[name=name]").val();  
-      let email = $("form#subscribe>input[name=email]").val();  
-      console.log(name, email);
-      var data = JSON.stringify({
-        "attributes": {
-          "FIRSTNAME": name
-        },
-        "listIds": [
-          3
-        ],
-        "updateEnabled": false,
-        "email": email
-      });
-
-      var config = {
-        method: 'post',
-        url: 'https://api.sendinblue.com/v3/contacts',
-        headers: { 
-          'api-key': '{{ $apikey }}', 
-          'Content-Type': 'application/json'
-        },
-        data : data
-      };
-
-      axios(config)
-      .then(function (response) {
-        if(response.status == 201){
-        } 
-      })
-      .catch(function (error) {
-        if(error.response.status == 400){
-        }
-      });
-      $("div#subscribe").hide();
-      $("div#subscribe-success").toggle();
-
-    });
   </script>
 
 {{- partial "js.html" . -}}

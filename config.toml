@@ -1,7 +1,7 @@
 baseURL = "https://potesorg.github.io"
 title = "Potes"
 theme = "hugo-notepadium"
-copyright = "2022 Potest©."
+copyright = "2022 Potes©."
 
 languageCode = "zh-cn"
 hasCJKLanguage = true
