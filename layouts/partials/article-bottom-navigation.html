@@ -8,7 +8,7 @@
 
       {{- with .PrevInSection -}}
       {{- $title := .Title | safeHTML -}}
-      {{- if $title -}}<a class="link header right-side" href="{{- .RelPermalink -}}"><span class="iconfont icon-article"></span>{{- .Title | safeHTML -}}</a>{{- end -}}
+      {{- if $title -}}<a class="link header right-side" href="{{- .RelPermalink -}}">{{- .Title | safeHTML -}}<span class="iconfont icon-article"></span></a>{{- end -}}
       {{- end -}}
     </div>
 </section>
