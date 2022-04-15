@@ -1,7 +1,7 @@
 +++
-author = "Hugo Authors"
-title = "Placeholder Text"
-date = "2019-03-09"
+author = "Potes Org"
+title = "Example post"
+date = "2022-04-15"
 description = "Lorem Ipsum Dolor Si Amet"
 tags = [
     "markdown",
